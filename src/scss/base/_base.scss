@@ -1,0 +1,100 @@
+@use '../abstracts';
+
+/*================== Base ==================*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Inter, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    user-select: none;
+}
+
+a,
+button,
+input,
+section,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea {
+    outline: none;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background: transparent;
+}
+
+input,
+select,
+textarea {
+    background: transparent;
+}
+
+input {
+    @supports (-webkit-touch-callout: none) {
+        font-size: 1.6rem;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+    transition: background-color 1s 99999s;
+    // -webkit-text-fill-color: var(--text-color);
+    // caret-color: var(--text-color);
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}
+
+.container {
+    @include abstracts.screen(sm) {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+}
