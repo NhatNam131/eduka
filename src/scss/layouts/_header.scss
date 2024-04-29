@@ -1,0 +1,41 @@
+%flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    padding: 2rem 0 2rem;
+
+    &__inner {
+        @extend %flex-center;
+    }
+
+    &__cta {
+        @extend %flex-center;
+        gap: 2.4rem;
+
+        margin-left: auto;
+    }
+}
+
+.navbar {
+    &__list {
+        display: flex;
+        gap: 2.4rem;
+
+        margin-left: 15.5rem;
+    }
+
+    &__item {
+        &--current .navbar__link {
+            color: #000;
+        }
+    }
+
+    &__link {
+        padding: 1rem;
+        color: #9c9d9d;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+}
