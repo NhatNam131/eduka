@@ -6,6 +6,12 @@
 .header {
     padding: 2rem 0 2rem;
 
+    &-hero {
+        &__wrap {
+            background-color: var(--background-header-hero-color);
+        }
+    }
+
     &__inner {
         @extend %flex-center;
     }
@@ -15,6 +21,13 @@
         gap: 2.4rem;
 
         margin-left: auto;
+    }
+
+    &__btn {
+        &--signin {
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+        }
     }
 }
 
@@ -28,14 +41,19 @@
 
     &__item {
         &--current .navbar__link {
-            color: #000;
+            color: var(--navbar-item-color-hover);
+        }
+
+        &:hover .navbar__link {
+            color: var(--navbar-item-color-hover);
         }
     }
 
     &__link {
         padding: 1rem;
-        color: #9c9d9d;
+        color: var(--navbar-item-color);
         font-size: 1.6rem;
         font-weight: 500;
+        transition: color 0.3s, -webkit-color 0.3s;
     }
 }

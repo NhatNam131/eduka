@@ -1,6 +1,88 @@
 @use '../abstracts';
 
 /*================== Base ==================*/
+:root {
+    // Common
+    --text-color: #010101;
+    --text-color-white: #fff;
+    --text-description: #717171;
+    --primary-color: #0166ff;
+    --item-box-shadow-color: rgba(0, 0, 0, 0.04);
+    --btn-background-color: rgba(50, 90, 255, 0.06);
+    --btn-hover-box-shadow-color: rgba(1, 102, 255, 0.2);
+
+    // Header
+    --navbar-item-color: #9c9d9d;
+    --navbar-item-color-hover: #000;
+    --background-header-hero-color: #fef6fa;
+
+    // Hero
+    --hero-sale-background-color: #fb6238;
+    --hero-title-strong-text-color: linear-gradient(269deg, #a6cf4a 16.43%, #ffd05a 37.58%, #fd60a9 54.54%);
+    --hero-circle-background: linear-gradient(142deg, rgba(255, 255, 255, 0.58) 1.8%, rgba(255, 255, 255, 0.66) 99.75%);
+    --hero-circle-image-background: #eaebe8;
+    --hero-card-background: #fff;
+    --hero-courses-box-shadow-color: rgba(249, 169, 120, 0.4);
+    --hero-mentors-circle-background: #a6cf4a;
+    --hero-courses-circle-background: #ff60a8;
+    --hero-card-text-color: #676b7c;
+
+    // Company
+    --company-background-color: #fff;
+
+    // Courses
+    --courses-background-color: #fff;
+    --courses-item-border-color: #f3f3f3;
+    --courses-item-title-color: #292c3f;
+
+    // Choice
+    --choice-background-color: #f5f5f5;
+    --choice-item-background-color: #fff;
+    --choice-thumb-background-color: #3d81c2;
+    --choice-thumb-green-background-color: #a6cf4a;
+    --choice-thumb-pink-background-color: #ff60a8;
+    --choice-thumb-orange-background-color: #fb6238;
+    --choice-thumb-box-shadow-color: rgba(61, 129, 194, 0.24);
+    --choice-thumb-box-shadow-green-color: rgba(166, 207, 74, 0.24);
+    --choice-thumb-box-shadow-pink-color: rgba(255, 96, 168, 0.24);
+    --choice-thumb-box-shadow-orange-color: rgba(255, 96, 168, 0.24);
+
+    // News
+    --news-green-color: #a6cf4a;
+    --news-orange-color: #fb6238;
+    --news-item-time-color: #707070;
+
+    // Events
+    --events-background-color: #fff;
+    --events-item-background-color: #fff;
+    --events-item-box-shadow-color: rgba(0, 0, 0, 0.12);
+
+    // Category
+    --category-background-color: #f5f5f5;
+    --category-item-background-color: #fff;
+    --category-item-title-color: #1b3152;
+    --category-item-box-shadow-color: rgba(0, 0, 0, 0.12);
+
+    // Feedback
+    --feedback-background-color: #fff;
+    --feedback-arrow-background-color: #fff;
+    --feedback-arrow-hover-box-shadow-color: rgba(0, 0, 0, 0.1);
+    --feedback-content-text-color: #14131a;
+    --feedback-data-number-color: #88ae32;
+    --feedback-data-title-color: #262b34;
+
+    // Contact
+    --contact-media-circle-background-color: linear-gradient(180deg, #e7effe 0%, rgba(232, 242, 254, 0) 100%);
+    --contact-background-color: #f8fbff;
+
+    // Footer
+    --footer-background-color: #f5f5f5;
+    --footer-subscribe-background-color: linear-gradient(91deg, #a6cf4a -4.67%, #98be41 101.64%);
+    --footer-input-background-color: #fff;
+    --footer-input-placeholder-color: #666262;
+    --footer-content-input-background-color: #fff;
+}
+
 *,
 ::before,
 ::after {
@@ -25,6 +107,10 @@ a {
     color: inherit;
     text-decoration: none;
     user-select: none;
+}
+
+img {
+    display: block;
 }
 
 a,

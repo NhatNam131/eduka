@@ -7,10 +7,11 @@ import CoursesPage from '~/pages/Courses';
 import CourseDetailPage from '~/pages/CourseDetail';
 import SignIn from '~/pages/SignIn';
 import SignUp from '~/pages/SignUp';
+import { HeroLayout } from '~/layouts';
 
 // Public routes
 const publicRoutes = [
-    { path: '/', component: HomePage },
+    { path: '/', component: HomePage, layout: HeroLayout },
     { path: '/about', component: AboutPage },
     { path: '/blog', component: BlogPage },
     { path: '/blog-detail', component: BlogDetailPage },

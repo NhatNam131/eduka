@@ -6,7 +6,7 @@ import * as styles from '~/scss/main.scss';
 
 const cx = classNames.bind(styles);
 
-function Button({ text, primary, rounded, outline, to, href, onClick, rightIcon, children, className, ...passProps }) {
+function Button({ text, primary, rounded, outline, to, href, onClick, children, className, ...passProps }) {
     let Comp = 'button';
 
     const props = {
@@ -33,7 +33,6 @@ function Button({ text, primary, rounded, outline, to, href, onClick, rightIcon,
     return (
         <Comp className={classes} {...props}>
             <span>{children}</span>
-            {rightIcon && <span>{rightIcon}</span>}
         </Comp>
     );
 }

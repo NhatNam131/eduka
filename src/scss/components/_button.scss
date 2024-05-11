@@ -1,5 +1,5 @@
 %flex-center {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 }
@@ -8,16 +8,23 @@
     @extend %flex-center;
 
     padding: 1rem 2.4rem;
-    border-radius: 2.4rem;
-    color: #fff;
-    background-color: #f8f8fb;
+
+    color: var(--text-color-white);
+    background-color: var(--btn-background-color);
+
     font-size: 1.6rem;
     font-weight: 600;
+
     white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 
+    transition: opacity, box-shadow 0.3s, -webkit-opacity, -webkit-box-shadow 0.3s;
+
     &:hover {
-        opacity: 0.9;
+        box-shadow: 0px 6px 24px 0px var(--btn-hover-box-shadow-color);
     }
 }
 
@@ -29,11 +36,25 @@
     background-color: transparent;
 }
 
+.outline {
+    border: 0.1rem solid var(--primary-color);
+
+    background-color: transparent;
+}
+
 .primary {
     padding: 1.1rem 3.3rem;
-    border-radius: 3rem;
 
-    background-color: #0166ff;
+    background-color: var(--primary-color);
 
     font-weight: 500;
+}
+
+.rounded {
+    border-radius: 3rem;
+}
+
+.icon {
+    display: inline-block;
+    text-align: center;
 }

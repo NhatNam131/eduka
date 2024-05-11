@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 
 import * as styles from '~/scss/main.scss';
-import images from '~/assets/icons';
+import logo from '~/assets/logo';
 import Button from '~/components/Button';
 
 const cx = classNames.bind(styles);
@@ -13,7 +13,9 @@ function Header() {
             <div className={cx('container')}>
                 <div className={cx('header__inner')}>
                     {/* Logo */}
-                    <img src={images.logo} alt="Eduka" />
+                    <a href="/">
+                        <img src={logo.logo} alt="Eduka" />
+                    </a>
                     {/* Navbar */}
                     <nav className={cx('navbar')}>
                         <ul className="navbar__list">
@@ -46,10 +48,10 @@ function Header() {
                     </nav>
                     {/* Button */}
                     <div className={cx('header__cta')}>
-                        <Button to="/signin" className={cx('btn text header__btn')}>
+                        <Button to="/signin" text>
                             Sign In
                         </Button>
-                        <Button to="/signup" className={cx('btn primary rounded header__btn')}>
+                        <Button to="/signup" primary rounded>
                             Sign Up
                         </Button>
                     </div>
