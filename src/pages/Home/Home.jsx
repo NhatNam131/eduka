@@ -2,7 +2,6 @@ import classNames from 'classnames/bind';
 
 import * as styles from '~/scss/main.scss';
 import {
-    AmazonLogoIcon,
     ArrowRightIcon,
     CategoryArtIcon,
     CategoryChemistryIcon,
@@ -29,14 +28,8 @@ import {
     FeedbackDecorThirdIcon,
     FeedbackLogoIcon,
     FeedbackStarIcon,
-    GoogleLogoIcon,
-    GustoLogoIcon,
-    HubspotLogoIcon,
-    LessonsIcon,
     PricesIcon,
     QuotesIcon,
-    SlackLogoIcon,
-    StarIcon,
     TimeIcon,
     UserIcon,
     WhitebookIcon,
@@ -44,23 +37,18 @@ import {
 import images from '~/assets/images';
 import { Link } from 'react-router-dom';
 import Button from '~/components/Button';
+import Partners from '~/components/Partners';
+import CourseList from '~/components/CourseList';
 
 const cx = classNames.bind(styles);
 
 function HomePage() {
     return (
         <>
-            {/* ================= Company ================= */}
-            <div className={cx('company')}>
-                <div className={cx('company__inner')}>
-                    <GoogleLogoIcon className={cx('company__logo')} />
-                    <SlackLogoIcon className={cx('company__logo')} />
-                    <AmazonLogoIcon className={cx('company__logo')} />
-                    <HubspotLogoIcon className={cx('company__logo')} />
-                    <GustoLogoIcon className={cx('company__logo')} />
-                </div>
+            {/* ================= Partners ================= */}
+            <div className={cx('home__partners')}>
+                <Partners />
             </div>
-
             {/* ================= Courses ================= */}
             <section className={cx('courses')}>
                 <div className="container">
@@ -68,107 +56,9 @@ function HomePage() {
                         <span className={cx('home__title--small')}>Our Courses</span>
                         <h1 className={cx('home__title--large')}>Browse Our Best Courses</h1>
 
-                        <section className={cx('home__list')}>
-                            {/* ========= Item 1 ========= */}
-                            <article className={cx('courses__item')}>
-                                <div className={cx('courses__item-thumb')}>
-                                    <img
-                                        src={images.imageFirstItem}
-                                        alt="Image item"
-                                        className={cx('courses__item-image')}
-                                    />
-                                </div>
-                                <h2 className={cx('courses__item-title')}>Teach Your Kids Math In The Simple Way</h2>
-                                <div className={cx('courses__item-bottom')}>
-                                    <div className={cx('courses__item-bottom-wrap')}>
-                                        <LessonsIcon />
-                                        <span className={cx('courses__item-bottom-quantity')}>42 Lessons</span>
-                                    </div>
-                                    <div className={cx('courses__item-bottom-wrap')}>
-                                        <StarIcon />
-                                        <StarIcon />
-                                        <StarIcon />
-                                        <StarIcon />
-                                        <StarIcon />
-                                    </div>
-                                </div>
-                            </article>
-
-                            {/* ========= Item 2 ========= */}
-                            <article className={cx('courses__item')}>
-                                <div className={cx('courses__item-thumb')}>
-                                    <img
-                                        src={images.imageSecondItem}
-                                        alt="Image item"
-                                        className={cx('courses__item-image')}
-                                    />
-                                </div>
-                                <h2 className={cx('courses__item-title')}>Learn Coding in the most Easiest Way</h2>
-                                <div className={cx('courses__item-bottom')}>
-                                    <div className={cx('courses__item-bottom-wrap')}>
-                                        <LessonsIcon />
-                                        <span className={cx('courses__item-bottom-quantity')}>22 Lessons</span>
-                                    </div>
-                                    <div className={cx('courses__item-bottom-wrap')}>
-                                        <StarIcon />
-                                        <StarIcon />
-                                        <StarIcon />
-                                        <StarIcon />
-                                        <StarIcon />
-                                    </div>
-                                </div>
-                            </article>
-
-                            {/* ========= Item 3 ========= */}
-                            <article className={cx('courses__item')}>
-                                <div className={cx('courses__item-thumb')}>
-                                    <img
-                                        src={images.imageThirdItem}
-                                        alt="Image item"
-                                        className={cx('courses__item-image')}
-                                    />
-                                </div>
-                                <h2 className={cx('courses__item-title')}>Learn Geography with Fun & Exciting Way</h2>
-                                <div className={cx('courses__item-bottom')}>
-                                    <div className={cx('courses__item-bottom-wrap')}>
-                                        <LessonsIcon />
-                                        <span className={cx('courses__item-bottom-quantity')}>24 Lessons</span>
-                                    </div>
-                                    <div className={cx('courses__item-bottom-wrap')}>
-                                        <StarIcon />
-                                        <StarIcon />
-                                        <StarIcon />
-                                        <StarIcon />
-                                        <StarIcon />
-                                    </div>
-                                </div>
-                            </article>
-
-                            {/* ========= Item 4 ========= */}
-                            <article className={cx('courses__item')}>
-                                <div className={cx('courses__item-thumb')}>
-                                    <img
-                                        src={images.imageFourthItem}
-                                        alt="Image item"
-                                        className={cx('courses__item-image')}
-                                    />
-                                </div>
-                                <h2 className={cx('courses__item-title')}>Kid’s English Native Spoken & Grammer </h2>
-                                <div className={cx('courses__item-bottom')}>
-                                    <div className={cx('courses__item-bottom-wrap')}>
-                                        <LessonsIcon />
-                                        <span className={cx('courses__item-bottom-quantity')}>15 Lessons</span>
-                                    </div>
-                                    <div className={cx('courses__item-bottom-wrap')}>
-                                        <StarIcon />
-                                        <StarIcon />
-                                        <StarIcon />
-                                        <StarIcon />
-                                        <StarIcon />
-                                    </div>
-                                </div>
-                            </article>
-                        </section>
+                        <div className={cx('home__courses')}>
+                            <CourseList />
+                        </div>
 
                         <Button primary rounded className={cx('courses__btn')}>
                             Load More
