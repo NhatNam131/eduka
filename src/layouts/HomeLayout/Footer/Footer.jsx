@@ -61,27 +61,27 @@ function Footer() {
                             <h2 className={cx('footer__column-title')}>Pages</h2>
                             <ul className={cx('footer__list')}>
                                 <li className={cx('footer__item')}>
-                                    <Link to="#!" className={cx('footer__link')}>
+                                    <Link to="/" className={cx('footer__link')}>
                                         Home
                                     </Link>
                                 </li>
                                 <li className={cx('footer__item')}>
-                                    <Link to="#!" className={cx('footer__link')}>
+                                    <Link to="/about" className={cx('footer__link')}>
                                         About
                                     </Link>
                                 </li>
                                 <li className={cx('footer__item')}>
-                                    <Link to="#!" className={cx('footer__link')}>
+                                    <Link to="/contact" className={cx('footer__link')}>
                                         Contact
                                     </Link>
                                 </li>
                                 <li className={cx('footer__item')}>
-                                    <Link to="#!" className={cx('footer__link')}>
+                                    <Link to="/blog" className={cx('footer__link')}>
                                         Blog
                                     </Link>
                                 </li>
                                 <li className={cx('footer__item')}>
-                                    <Link to="#!" className={cx('footer__link')}>
+                                    <Link to="/courses" className={cx('footer__link')}>
                                         Courses
                                     </Link>
                                 </li>

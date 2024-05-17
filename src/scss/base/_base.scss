@@ -10,6 +10,8 @@
     --item-box-shadow-color: rgba(0, 0, 0, 0.04);
     --btn-background-color: rgba(50, 90, 255, 0.06);
     --btn-hover-box-shadow-color: rgba(1, 102, 255, 0.2);
+    --btn-gray-background-color: #f6f6f6;
+    --page-cover-background-color: #0975de;
 
     // Header
     --navbar-item-color: #9c9d9d;
@@ -83,12 +85,20 @@
     --footer-content-input-background-color: #fff;
 
     // About
-    --about-introduce-first-background-color: #0975de;
     --about-introduce-second-background-color: #f5f5f5;
     --about-introduce-title-small-color: #ffd05a;
     --about-goal-background-color: #fff;
     --about-teacher-background-color: #f3f7f4;
     --about-partner-background-color: #fff;
+
+    // Blog
+    --blog-background-color: #fff;
+    --blog-search-boder-color: #f5f5f5;
+    --blog-bottom-item-color: #6c6c6c;
+    --blog-item-type-background-color: rgba(1, 102, 255, 0.1);
+    --blog-border-bottom-item-color: #bdbbbb;
+    --blog-subscribe-border-color: #f3f3f3;
+    --blog-subscribe-box-shadow-color: rgba(0, 0, 0, 0.04);
 }
 
 *,

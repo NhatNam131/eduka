@@ -45,6 +45,12 @@ const images = {
     teacherImageFirst: require('./About/teacher-1.png'),
     teacherImageSecond: require('./About/teacher-2.png'),
     teacherImageThird: require('./About/teacher-3.png'),
+
+    // ======================= Blog Page =======================
+    blogImageFirst: require('./Blog/blog-item-1.png'),
+    blogImageSecond: require('./Blog/blog-item-2.png'),
+    blogImageThird: require('./Blog/blog-item-3.png'),
+    blogImageFourth: require('./About/image-1.png'),
 };
 
 export default images;
