@@ -51,6 +51,7 @@ const images = {
     blogImageSecond: require('./Blog/blog-item-2.png'),
     blogImageThird: require('./Blog/blog-item-3.png'),
     blogImageFourth: require('./About/image-1.png'),
+    blogDetailImage: require('./Blog-detail/image.jpg'),
 };
 
 export default images;

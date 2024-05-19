@@ -41,7 +41,7 @@ function BlogPage() {
                                 {/* Item 1 */}
                                 <article className={cx('blog__item')}>
                                     <div className={cx('blog__item-content')}>
-                                        <Link to="#!">
+                                        <Link to="/blog-detail">
                                             <h2 className={cx('blog__title')}>
                                                 The great challenge of global learning
                                             </h2>
@@ -69,7 +69,7 @@ function BlogPage() {
                                 {/* Item 2 */}
                                 <article className={cx('blog__item')}>
                                     <div className={cx('blog__item-content')}>
-                                        <Link to="#!">
+                                        <Link to="/blog-detail">
                                             <h2 className={cx('blog__title')}>
                                                 How to building a career in data science
                                             </h2>
@@ -97,7 +97,7 @@ function BlogPage() {
                                 {/* Item 3 */}
                                 <article className={cx('blog__item')}>
                                     <div className={cx('blog__item-content')}>
-                                        <Link to="#!">
+                                        <Link to="/blog-detail">
                                             <h2 className={cx('blog__title')}>
                                                 We highlighting strategies for student success
                                             </h2>
@@ -125,7 +125,7 @@ function BlogPage() {
                                 {/* Item 4 */}
                                 <article className={cx('blog__item')}>
                                     <div className={cx('blog__item-content')}>
-                                        <Link to="#!">
+                                        <Link to="/blog-detail">
                                             <h2 className={cx('blog__title')}>
                                                 Find right learning way to your course online
                                             </h2>
